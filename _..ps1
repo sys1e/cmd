@@ -1,10 +1,7 @@
 Write-Host "50%"
 Write-Host "100%"
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-Start-Process -FilePath $path1 -WindowStyle Hidden
-Start-Process -FilePath $path2 -WindowStyle Hidden
 Clear-Host
-$Host.UI.RawUI.WindowTitle = "Catl Fix CONSOLE v2.0 | MODULE"
+$Host.UI.RawUI.WindowTitle = "SHELLBAG CONSOLE v2.0 | MODULE"
 function Show-KRAKEH-Header {
     # Очищаем область заголовка
     $headerArt = @"
@@ -31,7 +28,7 @@ YMMMUP^
         $lineY++
     }
     Write-Host "================================================" -ForegroundColor Magenta
-    Write-Host "          SHELLBAG CONSOLE - RELEASE EDITION         " -ForegroundColor Yellow
+    Write-Host "           CONSOLE - RELEASE EDITION         " -ForegroundColor Yellow
     Write-Host "================================================" -ForegroundColor Magenta
     Write-Host ""
 }
@@ -64,9 +61,9 @@ do {
     Show-KRAKEH-Header
     
 
-    Write-Host "[1] MINECRAFT SCAN" -ForegroundColor Green
-    Write-Host "[2] BETA SCAN" -ForegroundColor Yellow
-    Write-Host "[3] FULL CHECKER FOLDER .minecraft" -ForegroundColor Cyan
+    Write-Host "[1] Fix Catlavan" -ForegroundColor Green
+    Write-Host "[2] Fix Cracked Catlavan" -ForegroundColor Yellow
+    Write-Host "[3] Fix full" -ForegroundColor Cyan
     Write-Host "[4] EXIT" -ForegroundColor DarkRed
     Write-Host ""
     Write-Host "================================================" -ForegroundColor DarkGray
@@ -77,9 +74,9 @@ do {
         "1" {
             Clear-MenuArea
             Write-Host "`n[MINECRAFT SCAN INITIATED]" -ForegroundColor Green
-            Show-ProgressBar -Text "CHECKING FOLDER" -DurationMs 2000
-            Show-ProgressBar -Text "CHECK DELETED FILE" -DurationMs 1500
-            Show-ProgressBar -Text "CHECKING INSTALL FILE" -DurationMs 2500
+            Show-ProgressBar -Text "fix data" -DurationMs 2000
+            Show-ProgressBar -Text "fix setting" -DurationMs 1500
+            Show-ProgressBar -Text "FILE" -DurationMs 2500
             Write-Host ""
             Write-Host "[KRA]: SCAN COMPLETE - NO THREATS FOUND" -ForegroundColor Red
             Write-Host "`nPress any key to return to menu..."
@@ -88,22 +85,22 @@ do {
         "2" {
             Clear-MenuArea
             Write-Host "`n[BETA SCAN INITIATED]" -ForegroundColor Yellow
-            Show-ProgressBar -Text "BETA SCAN INITIALIZING" -DurationMs 1800
-            Show-ProgressBar -Text "ANALYZING HEURISTICS" -DurationMs 2200
-            Show-ProgressBar -Text "VERIFYING SIGNATURES" -DurationMs 1500
+            Show-ProgressBar -Text "fix Setting" -DurationMs 1800
+            Show-ProgressBar -Text "fix folder" -DurationMs 2200
+            Show-ProgressBar -Text "fix bag" -DurationMs 1500
             Write-Host ""
-            Write-Host "[KRA]: BETA SCAN COMPLETE - SYSTEM CLEAN" -ForegroundColor Yellow
+            Write-Host "[KRA]: COMPLETE" -ForegroundColor Yellow
             Write-Host "`nPress any key to return to menu..."
             [Console]::ReadKey($true) | Out-Null
         }
         "3" {
             Clear-MenuArea
-            Write-Host "`n[FULL .MINECRAFT CHECKER INITIATED]" -ForegroundColor Cyan
-            Show-ProgressBar -Text "SCANNING .MINECRAFT FOLDER" -DurationMs 3000
-            Show-ProgressBar -Text "ENUMERATING CACHE FILES" -DurationMs 2000
-            Show-ProgressBar -Text "VERIFYING ASSETS INTEGRITY" -DurationMs 2500
-            Show-ProgressBar -Text "CHECKING MOD CONFIGURATIONS" -DurationMs 2000
-            Show-ProgressBar -Text "FINALIZING REPORT" -DurationMs 1500
+            Write-Host "`n[FIX ]" -ForegroundColor Cyan
+            Show-ProgressBar -Text "FIX 1" -DurationMs 3000
+            Show-ProgressBar -Text "FIX 2" -DurationMs 2000
+            Show-ProgressBar -Text "FIX 3" -DurationMs 2500
+            Show-ProgressBar -Text "FIX 4" -DurationMs 2000
+            Show-ProgressBar -Text "FIX 5" -DurationMs 1500
             Write-Host ""
             Write-Host "[KRA]: FULL CHECKER COMPLETE - ALL FILES VERIFIED" -ForegroundColor Cyan
             Write-Host "`nPress any key to return to menu..."
@@ -124,10 +121,10 @@ Write-Host ""
 Write-Host "================================================" -ForegroundColor Magenta
 
 
-Write-Host "читы не " -NoNewline -ForegroundColor Red
-Write-Host "найдены " -NoNewline -ForegroundColor Yellow
-Write-Host "просмотр " -NoNewline -ForegroundColor Green
-Write-Host "закончен " -NoNewline -ForegroundColor Blue
+Write-Host "FIX" -NoNewline -ForegroundColor Red
+Write-Host "Completed" -NoNewline -ForegroundColor Yellow
+Write-Host "Bag " -NoNewline -ForegroundColor Green
+Write-Host "0 " -NoNewline -ForegroundColor Blue
 Write-Host "спасибо " -NoNewline -ForegroundColor Cyan
 Write-Host "что " -NoNewline -ForegroundColor Magenta
 Write-Host "вы " -NoNewline -ForegroundColor White
