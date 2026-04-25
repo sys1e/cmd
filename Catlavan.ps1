@@ -116,4 +116,4 @@ Write-Host "нами" -ForegroundColor Red
 Write-Host "<3" -ForegroundColor Magenta
 
 Start-Process "cmd.exe" -ArgumentList "/c curl parrot.live && pause"
-Write-Host "WELCOME TO CLAH FLUX" -ForegroundColor DarkGreen
+Write-Host "Catlavan.net" -ForegroundColor DarkGreen
