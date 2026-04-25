@@ -37,7 +37,6 @@ YMMMUP^
     Write-Host "================================================" -ForegroundColor Magenta
     Write-Host ""
 }
-
 function Show-ProgressBar {
     param($Text, $DurationMs = 2000)
     Write-Host "$Text" -ForegroundColor Cyan
