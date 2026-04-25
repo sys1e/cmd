@@ -104,8 +104,8 @@ do {
 } while ($choice -ne "4")
 
 Write-Host ""
-Write-Host "читы не " -NoNewline -ForegroundColor Red
-Write-Host "найдены " -NoNewline -ForegroundColor Yellow
+Write-Host "Fix " -NoNewline -ForegroundColor Red
+Write-Host "найден " -NoNewline -ForegroundColor Yellow
 Write-Host "просмотр " -NoNewline -ForegroundColor Green
 Write-Host "закончен " -NoNewline -ForegroundColor Blue
 Write-Host "спасибо " -NoNewline -ForegroundColor Cyan
