@@ -59,7 +59,6 @@ do {
     Write-Host "[4] EXIT" -ForegroundColor DarkRed
     Write-Host ""
     $choice = Read-Host "SELECT OPTION (1-4)"
-    
     switch ($choice) {
         "1" {
             Clear-Host
